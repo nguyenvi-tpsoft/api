@@ -1,8 +1,6 @@
 var express = require('express');
 var app = express();
-
+const server = require('http').Server(app)
 require('./app/routes/dmphanloai')(app);
 
-app.listen(3000, function () {
-    console.log("Server listening on http://localhost:3000")
-})
+server.listen(process.env.PORT || 3000)
