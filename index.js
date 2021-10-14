@@ -1,9 +1,7 @@
 var express = require('express');
 var app = express();
 
-var dmphanloaiRouter = require('./routers/dmphanloai')
-
-app.use('/', dmphanloaiRouter)
+require('./app/routes/dmphanloai')(app);
 
 app.listen(3000, function () {
     console.log("Server listening on http://localhost:3000")
