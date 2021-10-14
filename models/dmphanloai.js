@@ -4,9 +4,12 @@ const Dmphanloai = function (dmphanloai) {
     this.tenloai = dmphanloai.tenloai
 }
 
-dmphanloai.get_add = function (result) {
+Dmphanloai.get_all = function (result) {
     db.query("SELECT * FROM dmphanloai", function (err, dmphanloai) {
-        result(data)
-
+        if (err) {
+            result(err);
+        } else {
+            result(data);
+        }
     });
 }
