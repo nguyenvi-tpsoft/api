@@ -5,5 +5,5 @@ const server = require('http').Server(app)
 require('./app/routes/home')(app);
 require('./app/routes/dmphanloai')(app);
 
-server.listen(process.env.PORT || 3000)
+server.listen(process.env.PORT || 8080)
 
