@@ -5,5 +5,9 @@ var connection = mysql.createConnection({
     user: 'b5252dcc8d45ee',
     password: 'fa6f0400',
     database: 'heroku_d5cd58cd09ff80f'
+    // host: 'localhost',
+    // user: 'root',
+    // password: '',
+    // database: 'tplis'
 })
 module.exports = connection;

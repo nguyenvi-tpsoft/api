@@ -11,4 +11,11 @@ exports.detail = function (req, res) {
         res.send({ result: response })
     });
 }
+exports.add = function (req, res) {
+    var data = req.body;
+    Dmphanloai.create(data, function (response) {
+        res.send({ result: response })
+    });
+}
+
 
